@@ -1,0 +1,25 @@
+.register-form{
+    width:874px;
+    margin:0 auto;
+    margin-top:20px;
+    border:1px solid red;
+}
+.content-area{
+    margin:70px 70px;
+}
+h6{
+    margin-bottom:40px;
+}
+
+.submit{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.submitBtn{
+    color:white;
+    background-color:blueviolet;
+    padding:5px 15px;
+    border:1px solid blueviolet;
+    border-radius:5px;
+}
