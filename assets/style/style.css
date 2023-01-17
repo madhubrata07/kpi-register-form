@@ -2,6 +2,7 @@
     width:874px;
     margin:0 auto;
     margin-top:20px;
+    margin-bottom:20px;
     border:1px solid red;
 }
 .content-area{
@@ -14,7 +15,7 @@ h6{
 .submit{
     width:100%;
     display:flex;
-    justify-content:center;
+    justify-content:end;
 }
 .submitBtn{
     color:white;

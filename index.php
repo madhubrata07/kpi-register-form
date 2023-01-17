@@ -14,7 +14,7 @@
             <h4 class="text-center">Khulna Polytechnic Institute</h4>
             <h6 class="text-center">Registration Form</h6>
             <form action="action/register-action.php" method="post" enctype="multipart/form-data">
-                
+                <input type="hidden" name="id" id="id">
                 <div>
                     Name: <input type="text" name="name" id="name" class="name" required placeholder="Write your name"><br><br>
                     Birth Registration Number: <input type="number" name="brn" id="brn" class="brn" required placeholder="Write your Birth Registration Number"><br><br>
@@ -25,8 +25,9 @@
                     E-mail: <input type="email" name="email" id="email" class="email" required placeholder="Write your email"><br><br>
                     Contact Number: <input type="number" name="contact" id="contact" class="contact" required placeholder="Write your contact number">
                 </div>
-                <button type="submit" class="submitBtn">Submit</button>
-                
+                <div class="submit">
+                    <button type="submit" class="submitBtn">Submit</button>
+                </div>                
             </form>
         </div>
         
