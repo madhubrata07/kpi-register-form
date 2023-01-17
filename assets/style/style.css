@@ -19,8 +19,8 @@ h6{
 }
 .submitBtn{
     color:white;
-    background-color:blueviolet;
+    background-color:#007ACC;
     padding:5px 15px;
-    border:1px solid blueviolet;
-    border-radius:5px;
+    border:1px solid #007ACC;
+    border-radius:10px;
 }

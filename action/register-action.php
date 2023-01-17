@@ -17,8 +17,20 @@ $motherName=$_REQUEST['mothersName'];
 $mothersNidNum=$_REQUEST['mnidno'];
 $email=$_REQUEST['email'];
 $contact=$_REQUEST['contact'];
+$shift=$_REQUEST['shift'];
+$image=$_FILES['img_url'];
 
-$sql="INSERT INTO `reg_students` ( `name`, `birth_registration_num`, `fathers_name`, `fathers_nid_num`, `mothers_name`, `mothers_nid_num`, `email`, `contact`) VALUES ('$name', '$brn', '$fathersName', '$fathersNidNum', '$motherName', '$mothersNidNum', '$email', '$contact')";
+$dir="../upload_files/";
+$file_name=$dir.rand(1,99999).$image['name'];
+
+move_uploaded_file(
+    $image['tmp_name'],$file_name
+);
+
+$imgUrl=str_replace("../../", "",$file_name);
+
+
+$sql="INSERT INTO `reg_students` ( `name`, `birth_registration_num`, `fathers_name`, `fathers_nid_num`, `mothers_name`, `mothers_nid_num`, `email`, `contact`, `shift`, `img_url`) VALUES ('$name', '$brn', '$fathersName', '$fathersNidNum', '$motherName', '$mothersNidNum', '$email', '$contact', '$shift', '$imgUrl')";
 
 if ($conn->query($sql)===TRUE){
     header('location:/kpi-register-form/print.php');
