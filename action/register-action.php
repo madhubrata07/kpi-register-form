@@ -33,5 +33,5 @@ $imgUrl=str_replace("../../", "",$file_name);
 $sql="INSERT INTO `reg_students` ( `name`, `birth_registration_num`, `fathers_name`, `fathers_nid_num`, `mothers_name`, `mothers_nid_num`, `email`, `contact`, `shift`, `img_url`) VALUES ('$name', '$brn', '$fathersName', '$fathersNidNum', '$motherName', '$mothersNidNum', '$email', '$contact', '$shift', '$imgUrl')";
 
 if ($conn->query($sql)===TRUE){
-    header('location:/kpi-register-form/print.php');
+    header('location:/kpi-register-form/index.php');
 }
